@@ -1,0 +1,66 @@
+<div class="container">
+        <br>
+        <a name="top"></a>
+        <div class="row">
+            <div class="col-lg-8">
+                <br>
+                
+                <div class="title" style="text-align: right">
+                    <h1>
+                        QuickNews &nbsp; Entertainment
+                    </h1>
+                    <br>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="img" style="text-align: left">
+                    <img src="https://image.flaticon.com/icons/svg/263/263068.svg" height="100">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1">
+    
+            </div>
+            <div class="col-lg-10">
+    
+                <div *ngIf="enter">
+                    <div id="mad" *ngFor="let newhigh of enter.articles">
+    
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4">
+    
+    
+                                <img src="{{newhigh['urlToImage']}} " width="275" style="border-radius: 5px">
+                                <br>
+                                
+                            </div>
+                            <div class="col-lg-8">
+    
+    
+                                <h3 id="tit">
+                                    {{newhigh['title']}} </h3>
+    
+                                <p id="cont">{{newhigh['description']}}
+    
+                                </p>
+                                <p id="aut">By: {{newhigh['author']}} &nbsp; Source: {{newhigh['source'].name}}
+                                        &nbsp;
+                                    View Full News: <a href=" {{newhigh['url']}}"> {{newhigh['source'].name}}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <hr>
+    
+            </div>
+            <div class="col-lg-1">
+                   
+                    <i (click)="onEdit()" class="fa fa-chevron-up fa-2x"></i>
+               
+    
+            </div>
+        </div>
+    </div>

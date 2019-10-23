@@ -1,0 +1,53 @@
+#start{
+    background-color:#052962 !important;
+    height: 220px;
+    font-family: 'Caveat', cursive;
+    
+}
+#new{
+    font-size: 50px;
+    color: #FFE500;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 28px;
+    margin-left: 28px;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+.navbar-nav a:hover{
+    color: black !important;
+}
+#navbarNav a:focus {
+    color:  #3aafa9 !important;
+    }
+
+    h1{
+        font-size: 24px;
+        font-weight: 900;
+        font-family: 'Acme', sans-serif;
+
+    }
+    #small{
+        font-size: 10px !important;
+        color: white;
+        padding-top:40px; 
+    }
+
+    p{
+        font-size: 16px;
+        font-family: 'Trochut', cursive;
+    }
+
+    .navbar-brand{
+        font-size: 30px;
+    }
+    .fa{
+        color: #ffffff !important;
+        font-weight: 800;
+    }
+    #o{
+        color:#FFE500 !important;
+    }

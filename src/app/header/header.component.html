@@ -1,0 +1,57 @@
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Acme|Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat:700|Trochut&display=swap" rel="stylesheet">
+<body>
+<!--Navbar -->
+<nav id="start" class="navbar navbar-expand-lg navbar-dark indigo">
+    <a class="navbar-brand" href="#"><b id="new">QuickNews</b><i id="o"class="fa fa-podcast fa-2x" aria-hidden="true"></i></a><span id="small">By Aaron</span>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+      aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }"  id="navbarSupportedContent-555">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link"[routerLink]="['/']"><br><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i><h1><br>Headlines</h1>
+            <p>Handpicked</p>
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/sports']"><br><i class="fa fa-futbol-o fa-2x" aria-hidden="true"></i><h1><br>Sports</h1>
+            <p>News</p></a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" [routerLink]="['/business']"><br><i class="fa fa-building-o fa-2x" aria-hidden="true"></i><h1><br>Business</h1>
+                <p>News</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/technology']"><br><i class="fa fa-laptop fa-2x" aria-hidden="true"></i><h1><br>Technology</h1>
+                <p>News</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/entertainment']"><br><i class="fa fa-film fa-2x" aria-hidden="true"></i><h1><br>Entertainment</h1>
+                <p>News</p></a>
+          </li>
+        
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item avatar">
+          <a target="_blank" class="nav-link p-0" href="http://abuthelo.surge.sh/">
+            <img src="http://www.well-being-therapy.com/wp-content/uploads/2017/01/news.png" class="rounded-circle z-depth-0"
+              alt="avatar image" height="70">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+  </body>
